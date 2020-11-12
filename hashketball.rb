@@ -186,12 +186,6 @@ def player_stats(name)
 end 
 
 def big_shoe_rebounds
-  # create a largest shoe variable 
-  # iterate over home and away hashes focusing on the key and value of each
-  # iterate over the array of players focusing on each player (inner hash of stats)
-  # if the current player's shoe is larger than the largest shoe 
-  # set the current player's shoe equal to the largest shoe 
-  # return the 
   largest_shoe = nil 
    game_hash.each do |key, value|
     value[:players].each do |player|
