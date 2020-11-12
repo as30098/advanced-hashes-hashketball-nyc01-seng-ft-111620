@@ -187,10 +187,12 @@ end
 
 def big_shoe_rebounds
   largest_shoe = nil 
+  largest_shoe_rebounds = nil
    game_hash.each do |key, value|
     value[:players].each do |player|
       if largest_shoe == nil || player[:shoe] > largest_shoe
         largest_shoe = player[:shoe]
+        largest_shoe=rebounds = player[:rebounds]
       end 
     end 
   end 
